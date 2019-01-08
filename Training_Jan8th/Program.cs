@@ -15,21 +15,32 @@ namespace Training_Jan8th
             Subtract s = new Subtract();
             Multiply m = new Multiply();
             Divide d = new Divide();
-           
-       
-            var add = a.add(8, 9);
-            var subtract = s.subtract(10, 9);
-            var multiply = m.multiply(12, 12);
-            var divide = d.divide(21, 3);
 
-            Console.WriteLine(add);
-            Console.WriteLine(subtract);
-            Console.WriteLine(multiply);
-            Console.WriteLine(divide);
-            Console.ReadKey();
-            
+            do
+            {
+                Console.WriteLine("Enter two numbers to add, subtract, multiply, and divide:");
+                string nums = Console.ReadLine();
+                string[] input = nums.Split(' ');
+                if (input.Count() <= 1)
+                {
+                    Console.WriteLine("There is no space between your numbers\n");
+                }
+                else
+                {
+                    var add = a.add(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
+                    var subtract = s.subtract(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
+                    var multiply = m.multiply(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
+                    var divide = d.divide(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
+                    Console.WriteLine("Addition Result: " + add);
+                    Console.WriteLine("Subtraction Result: " + subtract);
+                    Console.WriteLine("Multiplication Result: " + multiply);
+                    Console.WriteLine("Division Result: " + divide);
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+                    Console.ReadKey();
+                }
+
+            } while (true);
+
         }
     }
 }
