@@ -8,7 +8,7 @@ namespace Training_Jan8th
 {
     class Multiply
     {
-        public int multiply(int x, int y)
+        public double multiply(double x, double y)
         {
             return x * y;
         }

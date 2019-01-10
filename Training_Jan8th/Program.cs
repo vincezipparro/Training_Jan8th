@@ -27,10 +27,11 @@ namespace Training_Jan8th
                 }
                 else
                 {
-                    var add = a.add(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
-                    var subtract = s.subtract(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
-                    var multiply = m.multiply(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
-                    var divide = d.divide(Convert.ToInt32(input[0]), Convert.ToInt32(input[1]));
+
+                    var add = a.add(Convert.ToDouble(input[0]), Convert.ToDouble(input[1]));
+                    var subtract = s.subtract(Convert.ToDouble(input[0]), Convert.ToDouble(input[1]));
+                    var multiply = m.multiply(Convert.ToDouble(input[0]), Convert.ToDouble(input[1]));
+                    var divide = d.divide(Convert.ToDouble(input[0]), Convert.ToDouble(input[1]));
                     Console.WriteLine("Addition Result: " + add);
                     Console.WriteLine("Subtraction Result: " + subtract);
                     Console.WriteLine("Multiplication Result: " + multiply);

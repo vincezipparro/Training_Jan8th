@@ -8,7 +8,7 @@ namespace Training_Jan8th
 {
     class Addition
     {
-        public int add(int x, int y)
+        public double add(double x, double y)
         {
             return x + y;
         }

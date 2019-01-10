@@ -8,7 +8,7 @@ namespace Training_Jan8th
 {
     class Divide
     {
-        public int divide(int x, int y)
+        public double divide(double x, double y)
         {
             return x / y;
         }
